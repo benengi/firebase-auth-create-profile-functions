@@ -7,7 +7,6 @@ import { MyApp } from './app.component';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 export const firebaseCredential = {
   apiKey: "AIzaSyBwEUe6x_w_yLFrr--xYLQJLxRT2Rc8vtY",
@@ -26,8 +25,7 @@ export const firebaseCredential = {
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseCredential),
-    AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
